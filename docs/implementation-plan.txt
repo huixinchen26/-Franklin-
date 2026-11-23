@@ -1,0 +1,11 @@
+Franklin.exe implementation plan — 2026-11-23
+Goal: A usable friendship farewell site and a complete Chinese planning handoff.
+Architecture: Buildless HTML/CSS/ES modules, native WebGL with 2D fallback; local-only progress and image catalogue. Native Sites private hosting.
+Design: Latest user direction controls: minimalist off-white and forest green, lime accents, lavender clay suitcase. Pixel styling only within optional mini game. Source content from the complete local draft and original user turns; draft copy must not imply unverified personal events.
+Chosen approach (implementation judgement): one scrollable memory hub and modal chapters; CSS-only depth insufficient for requested rotation; framework/server unnecessary for local state and static images.
+Task 1: Test unknown-answer exclusion, repeat-answer idempotence, persistence sanitation and letter unlock before implementing core.mjs and content.mjs.
+Task 2: Implement index.html/style.css, app.mjs for quiz, interactive memory map, photo lightbox/filter, open dinner prompts, certificate PNG, hidden letter, local photo upload with explicit device-only semantics. Keyboard focus and reduced-motion support.
+Task 3: Native WebGL scene with genuine drag rotation, clay geometries/textured photos; Canvas pixel volleyball game with keyboard and touch. Graphic fallback when WebGL unavailable.
+Task 4: Chinese planning deliverable includes experience flow, vetted questions/answers/source status, memory and photos, open questions, precise interactions and copy, P0/P1/P2 and executable coding prompts.
+Task 5: Browser QA desktop/mobile, core suite, asset references, no unintended horizontal scroll, correct wrong-answer continuation, persistence, album, letter and certificate. Package exact source then publish private and report limitations.
+Constraints: No invented city/date/person name; 10/11 retained as source says with date format unconfirmed; 1122 photos distinct from 1123 dinner; no exact departure flight; no cloud upload implied.

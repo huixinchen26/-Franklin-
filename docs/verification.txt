@@ -1,0 +1,16 @@
+Verification — 2026-11-23
+Core suite: 4/4 passed (malformed saved state; first answer retained; 8 wrong answers + 3 distinct stamps unlock; unknown prompts excluded).
+ES module syntax: app.mjs, scene.mjs, game.mjs passed node --check.
+Actual browser: native WebGL scene visible with suitcase, volleyball, corgi and real photo textures; no console errors/warnings observed.
+Actual 1440px desktop and 390px phone viewport: no horizontal overflow at 390px, no broken images.
+Quiz: next button hidden before first answer; answered all 8 questions incorrectly; result 0/8 still completes challenge.
+Letter: locked with 8 questions and 0 stamps; collected three stamps; reload retained 8/8 and 3/3; letter unlocked.
+Album: 42 photos displayed; Malaysia filter returned 12; large image next navigation changed image caption correctly.
+Certificate: actual browser PNG download succeeded; copied to user outputs.
+Dinner prompts: 5 cards displayed; group name/headcount/birthday remain open rather than scored.
+Pixel game: launched, canvas and touch buttons rendered, ArrowRight input sent; not independently played through 5 successful catches.
+Review: independent read-only review found hidden attribute precedence, text contrast, dialog accessible name; fixed all three. Browser verified hidden next button before answering.
+Not independently verified: physical phone GPU/touch performance; WebGL-disabled fallback; actual shared cloud upload (not implemented); existing online shared-album link (not supplied).
+
+Click-scene revision 2026-11-23: actual desktop1440x900, annotation796x594 and mobile390x844 tests; root scrollHeight equals viewport; only one data-screen visible; cover->hub->map->memory and back; hub->album; quiz result->map; hub->finale->cover all tested. Mobile hub/finale controls within main bounds. Native WebGL red suitcase, white seam-panel volleyball and tiled swimming pool/ladder rendered with no console errors. Existing save progress preserved.
+Short landscape 844x390: reproduced clipped Start before fix (bottom430 > main350); added compact landscape rules. Actual browser after fix: Start in view, chapter/finale buttons0 clipped, body has no vertical scroll.
